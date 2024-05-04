@@ -112,7 +112,7 @@ app.post("/renombrar", async(req, res) =>{
     
     await rename(dataPath+nombre+'.'+extension,dataPath+nuevoNombre+'.'+extension)
 
-    res.status(200).send("archivo renombrado")
+    res.status(200).send(`archivo renombrado de ${nombre}.${extension} a ${nuevoNombre}.${extension}`)
 })
 
 
